@@ -1,18 +1,21 @@
 ---
-import Tour from '../components/Tour.astro';
-import { Button } from '../components/UI/Button/Button.jsx';
+import { Header } from './../components/Header/Header.jsx'
 
-let title = 'My Astro Site';
+let title = 'My Astro App';
 let url = "https://github.com/rinatvaliullov";
-
+const titles = [
+  { id: 1, title: 'Welcome' },
+  { id: 2, title: 'Languages' }
+]
 ---
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
     <title>{title}</title>
 
-        <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
 
     <link rel="stylesheet" href="/style/global.css">
     <link rel="stylesheet" href="/style/home.css">
@@ -23,11 +26,9 @@ let url = "https://github.com/rinatvaliullov";
 </head>
 <body>
   <main>
-    <Tour />
-
-    <Button
-      client:visible
-      url={url}
+    <Header
+       client:visible
+      titles={titles}
     />
   </main>
 </body>

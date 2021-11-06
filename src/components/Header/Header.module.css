@@ -1,0 +1,12 @@
+.header {
+  background-color: #456;
+  padding: 15px;
+}
+
+ul {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
+  width: 500px;
+}
