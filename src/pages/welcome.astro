@@ -1,18 +1,13 @@
 ---
-const greetText = 'Welcome!';
+import MainHead from '../components/MainHead.astro';
+
+const greetText = 'Welcome';
 const title = 'Welcome';
 ---
 
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width">
-    <title>{title}</title>
-
-    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-
-    <link rel="stylesheet" href="/style/global.css">
-    <link rel="stylesheet" href="/style/home.css">
+    <MainHead title={title} />
 
     <style>
       section {
@@ -28,7 +23,7 @@ const title = 'Welcome';
 <body>
 
   <section>
-    <h1 class="header">{greetText}</h1>
+    <h1 class="header">{greetText} page</h1>
     <a href="/">Home</a>
   </section>
 

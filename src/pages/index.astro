@@ -1,5 +1,6 @@
 ---
-import { Header } from './../components/Header/Header.jsx'
+import MainHead from '../components/MainHead.astro';
+import { Header } from './../components/Header/Header.jsx';
 
 let title = 'My Astro App';
 let url = "https://github.com/rinatvaliullov";
@@ -11,16 +12,7 @@ const titles = [
 
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width">
-    <title>{title}</title>
-
-    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-
-    <link rel="stylesheet" href="/style/global.css">
-    <link rel="stylesheet" href="/style/home.css">
-
-    <style></style>
+    <MainHead />
 </head>
 <body>
   <main>

@@ -1,14 +1,12 @@
 ---
+import MainHead from '../components/MainHead.astro';
 
+const title = 'Oops';
 ---
 
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>404</title>
-  <link rel="stylesheet" href="/style/home.css">
+  <MainHead title={title} />
   <style>
     body {
       background-color: #eff;
@@ -20,6 +18,16 @@
       color: red;
       font-size: 48px;
       text-align: center;
+    }
+    a {
+      color: var(--color-light, #456);
+    }
+    a:hover {
+      color: #aaa;
+    }
+
+    a:active {
+      color: #9d9dfb;
     }
   </style>
 </head>
