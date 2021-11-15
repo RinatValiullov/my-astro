@@ -8,7 +8,11 @@ const Header = ({ titles }) => {
         <ul>
           {
             titles.map((item) => {
-              return <li key={item.id}>{item.title}</li>;
+              return (
+                <li key={item.id}>
+                  <a href={item.title.toLowerCase()}>{item.title}</a>
+                </li>
+              );
             })
           }
         </ul>
