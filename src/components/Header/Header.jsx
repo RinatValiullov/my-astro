@@ -1,10 +1,10 @@
 import React from 'react';
-import classes from './Header.module.css';
+import styles from './Header.module.css';
 import { NavigationLink } from './../NavigationLink/NavigationLink';
 
 const Header = ({ titles }) => {
   return (
-    <header className={classes.header}>
+    <header className={styles.header}>
       <nav>
         <ul>
           {
@@ -12,7 +12,6 @@ const Header = ({ titles }) => {
               return (
                 <li key={item.id}>
                   <NavigationLink title={item.title} />
-                  {/* <a href={item.title.toLowerCase()}>{item.title}</a> */}
                 </li>
               );
             })
