@@ -1,6 +1,7 @@
 ---
 import MainHead from '../components/MainHead.astro';
 import { Header } from './../components/Header/Header';
+import { MyCV } from './../components/MyCV/MyCV';
 
 let title = 'My Astro App';
 let url = "https://github.com/rinatvaliullov";
@@ -19,6 +20,9 @@ const titles = [
     <Header
       client:visible
       titles={titles}
+    />
+    <MyCV
+      client:visible
     />
   </main>
 </body>
