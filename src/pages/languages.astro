@@ -1,0 +1,47 @@
+---
+import MainHead from '../components/MainHead.astro';
+
+const title = 'Languages';
+const langs = [
+  { id: 1, lang: 'JavaScript' },
+  { id: 2, lang: 'PHP' },
+];
+---
+
+<html lang="en">
+<head>
+    <MainHead title={title} />
+
+    <style>
+      section {
+        text-align: center;
+      }
+      .header {
+        font-size: 2rem;
+        margin: 25px 0;
+        text-align: center;
+      }
+      ul {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto 25px;
+        max-width: 300px;
+      }
+    </style>
+</head>
+<body>
+
+  <section>
+    <h1 class="header">{title} page</h1>
+    <ul>
+      {
+        langs.map(l => {
+          return <li>{l.lang}</li>
+        })
+      }
+    </ul>
+    <a href="/">Home</a>
+  </section>
+
+</body>
+</html>
