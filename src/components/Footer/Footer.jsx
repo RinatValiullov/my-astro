@@ -12,6 +12,9 @@ const Footer = () => {
           <a href="https://gitlab.com/4rontender" target="_blank">Gitlab</a>
         </li>
       </ul>
+      <small className={styles.byline}>
+        <a href="astro.build" target="_blank">🚀 Built by Astro</a>
+      </small>
     </footer>
   );
 };

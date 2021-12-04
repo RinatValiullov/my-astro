@@ -1,0 +1,15 @@
+.footer {
+  padding: 0 0 20px;
+  position: relative;
+}
+
+.byline {
+  bottom: 10px;
+  font-size: 0.5em;
+  position: absolute;
+  right: 15px;
+}
+
+.byline a {
+  text-decoration: none;
+}
