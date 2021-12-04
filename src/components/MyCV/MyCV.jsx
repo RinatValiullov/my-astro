@@ -3,11 +3,11 @@ import styles from './MyCV.module.css';
 
 const MyCV = () => {
   return (
-    <header className={styles.content}>
+    <section className={styles.content}>
       <h1>Ринат Валиуллов</h1>
       <h2>HTML-верстальщик, Фронтенд разработчик</h2>
       <a href="/assets/cv.pdf" download="cv.pdf" className={styles.cv}>Скачать резюме</a>
-    </header>
+    </section>
   );
 };
 

@@ -1,9 +1,10 @@
 ---
 import MainHead from '../components/MainHead.astro';
 import { Header } from '../components/Header/Header';
+import { Footer } from '../components/Footer/Footer';
 import { MyCV } from '../components/MyCV/MyCV';
 
-let title = 'My Astro App';
+let title = 'My blog in astro';
 let url = "https://github.com/rinatvaliullov";
 const titles = [
   { id: 1, title: 'Welcome' },
@@ -16,11 +17,12 @@ const titles = [
     <MainHead />
 </head>
 <body>
+  <Header
+    titles={titles}
+  />
   <main>
-    <Header
-      titles={titles}
-    />
     <MyCV />
   </main>
+  <Footer />
 </body>
 </html>
