@@ -13,7 +13,7 @@ const Footer = () => {
         </li>
       </ul>
       <small className={styles.byline}>
-        <a href="astro.build" target="_blank">🚀 Built by Astro</a>
+        <a href="https://astro.build" target="_blank">🚀 Built by Astro</a>
       </small>
     </footer>
   );
