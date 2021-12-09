@@ -4,7 +4,7 @@ import styles from './Footer.module.css';
 const Footer = () => {
   return (
     <footer className={styles.footer}>
-      <ul>
+      <ul className={styles.navFooter}>
         <li>
           <a href="https://github.com/rinatvaliullov" target="_blank">Github</a>
         </li>
@@ -13,7 +13,10 @@ const Footer = () => {
         </li>
       </ul>
       <small className={styles.byline}>
-        <a href="https://astro.build" target="_blank">🚀 Built by Astro</a>
+        <a href="https://astro.build" target="_blank">
+          <span className={styles.rocket}>🚀</span>
+          <span className={styles.text}>Built by Astro</span>
+        </a>
       </small>
     </footer>
   );

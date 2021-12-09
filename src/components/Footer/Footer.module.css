@@ -14,3 +14,22 @@
 .byline a {
   text-decoration: none;
 }
+
+/* Media queries */
+
+@media screen and (max-width: 768px) {
+  .navFooter {
+    max-width: 300px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .navFooter {
+    font-size: 0.6rem;
+    max-width: 200px;
+  }
+
+  .rocket {
+    display: none;
+  }
+}

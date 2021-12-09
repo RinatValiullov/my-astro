@@ -10,3 +10,18 @@ ul {
   margin: auto;
   max-width: 500px;
 }
+
+/* Media queries */
+
+@media screen and (max-width: 768px) {
+  .navHeader {
+    max-width: 300px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .navHeader {
+    font-size: 0.6rem;
+    max-width: 200px;
+  }
+}

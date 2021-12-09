@@ -6,7 +6,7 @@ const Header = ({ titles }) => {
   return (
     <header className={styles.header}>
       <nav>
-        <ul>
+        <ul className={styles.navHeader}>
           {
             titles.map((item) => {
               return (

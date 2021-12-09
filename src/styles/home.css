@@ -33,3 +33,12 @@ button {
   cursor: pointer;
   font-size: 1.2rem;
 }
+
+
+/* Media queries */
+
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 0.8rem;
+  }
+}
