@@ -8,5 +8,5 @@ ul {
   display: flex;
   justify-content: space-around;
   margin: auto;
-  width: 500px;
+  max-width: 500px;
 }
